@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56d3c023-5638-4b63-9e01-1ed478e3688b">
+  <name>ВКМ_РасчетЗП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет ЗП</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>
