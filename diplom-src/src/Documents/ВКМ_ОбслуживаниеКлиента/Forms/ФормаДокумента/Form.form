@@ -139,19 +139,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_Клиент</name>
-    <id>7</id>
+    <name>Клиент</name>
+    <id>60</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Клиент</segments>
+      <segments>Объект.Клиент</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_КлиентРасширеннаяПодсказка</name>
-      <id>9</id>
+      <name>КлиентРасширеннаяПодсказка</name>
+      <id>62</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -165,8 +165,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_КлиентКонтекстноеМеню</name>
-      <id>8</id>
+      <name>КлиентКонтекстноеМеню</name>
+      <id>61</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -175,7 +175,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -189,19 +189,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_Договор</name>
-    <id>10</id>
+    <name>Договор</name>
+    <id>63</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Договор</segments>
+      <segments>Объект.Договор</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_ДоговорРасширеннаяПодсказка</name>
-      <id>12</id>
+      <name>ДоговорРасширеннаяПодсказка</name>
+      <id>65</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -215,8 +215,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_ДоговорКонтекстноеМеню</name>
-      <id>11</id>
+      <name>ДоговорКонтекстноеМеню</name>
+      <id>64</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -225,7 +225,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -239,19 +239,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_Специалист</name>
-    <id>13</id>
+    <name>Специалист</name>
+    <id>66</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Специалист</segments>
+      <segments>Объект.Специалист</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_СпециалистРасширеннаяПодсказка</name>
-      <id>15</id>
+      <name>СпециалистРасширеннаяПодсказка</name>
+      <id>68</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -265,8 +265,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_СпециалистКонтекстноеМеню</name>
-      <id>14</id>
+      <name>СпециалистКонтекстноеМеню</name>
+      <id>67</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -275,7 +275,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -289,19 +289,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_ДатаПроведенияРабот</name>
-    <id>16</id>
+    <name>ДатаПроведенияРабот</name>
+    <id>69</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_ДатаПроведенияРабот</segments>
+      <segments>Объект.ДатаПроведенияРабот</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_ДатаПроведенияРаботРасширеннаяПодсказка</name>
-      <id>18</id>
+      <name>ДатаПроведенияРаботРасширеннаяПодсказка</name>
+      <id>71</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -315,8 +315,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_ДатаПроведенияРаботКонтекстноеМеню</name>
-      <id>17</id>
+      <name>ДатаПроведенияРаботКонтекстноеМеню</name>
+      <id>70</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -325,7 +325,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -342,19 +342,19 @@
     <name>ГруппаВремяПроведенияРабот</name>
     <id>58</id>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВремяНачалаРаботПлан</name>
-      <id>19</id>
+      <name>ВремяНачалаРаботПлан</name>
+      <id>72</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВремяНачалаРаботПлан</segments>
+        <segments>Объект.ВремяНачалаРаботПлан</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВремяНачалаРаботПланРасширеннаяПодсказка</name>
-        <id>21</id>
+        <name>ВремяНачалаРаботПланРасширеннаяПодсказка</name>
+        <id>74</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -368,8 +368,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВремяНачалаРаботПланКонтекстноеМеню</name>
-        <id>20</id>
+        <name>ВремяНачалаРаботПланКонтекстноеМеню</name>
+        <id>73</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -378,7 +378,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>EnterOnInput</editMode>
+      <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -392,19 +392,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВремяОкончанияРаботПлан</name>
-      <id>22</id>
+      <name>ВремяОкончанияРаботПлан</name>
+      <id>75</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВремяОкончанияРаботПлан</segments>
+        <segments>Объект.ВремяОкончанияРаботПлан</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВремяОкончанияРаботПланРасширеннаяПодсказка</name>
-        <id>24</id>
+        <name>ВремяОкончанияРаботПланРасширеннаяПодсказка</name>
+        <id>77</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -418,8 +418,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВремяОкончанияРаботПланКонтекстноеМеню</name>
-        <id>23</id>
+        <name>ВремяОкончанияРаботПланКонтекстноеМеню</name>
+        <id>76</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -428,7 +428,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>EnterOnInput</editMode>
+      <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -473,19 +473,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_ОписаниеПроблемы</name>
-    <id>25</id>
+    <name>ОписаниеПроблемы</name>
+    <id>78</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_ОписаниеПроблемы</segments>
+      <segments>Объект.ОписаниеПроблемы</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_ОписаниеПроблемыРасширеннаяПодсказка</name>
-      <id>27</id>
+      <name>ОписаниеПроблемыРасширеннаяПодсказка</name>
+      <id>80</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -499,8 +499,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_ОписаниеПроблемыКонтекстноеМеню</name>
-      <id>26</id>
+      <name>ОписаниеПроблемыКонтекстноеМеню</name>
+      <id>79</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -509,7 +509,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -523,19 +523,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ВКМ_Комментарий</name>
-    <id>28</id>
+    <name>Комментарий</name>
+    <id>81</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Комментарий</segments>
+      <segments>Объект.Комментарий</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ВКМ_КомментарийРасширеннаяПодсказка</name>
-      <id>30</id>
+      <name>КомментарийРасширеннаяПодсказка</name>
+      <id>83</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -549,8 +549,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_КомментарийКонтекстноеМеню</name>
-      <id>29</id>
+      <name>КомментарийКонтекстноеМеню</name>
+      <id>82</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -559,7 +559,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -573,31 +573,31 @@
     </extInfo>
   </items>
   <items xsi:type="form:Table">
-    <name>ВКМ_ВыполненныеРаботы</name>
-    <id>31</id>
+    <name>ВыполненныеРаботы</name>
+    <id>84</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_ВыполненныеРаботы</segments>
+      <segments>Объект.ВыполненныеРаботы</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВыполненныеРаботыНомерСтроки</name>
-      <id>44</id>
+      <name>ВыполненныеРаботыНомерСтроки</name>
+      <id>97</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВыполненныеРаботы.LineNumber</segments>
+        <segments>Объект.ВыполненныеРаботы.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыНомерСтрокиРасширеннаяПодсказка</name>
-        <id>46</id>
+        <name>ВыполненныеРаботыНомерСтрокиРасширеннаяПодсказка</name>
+        <id>99</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -611,8 +611,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыНомерСтрокиКонтекстноеМеню</name>
-        <id>45</id>
+        <name>ВыполненныеРаботыНомерСтрокиКонтекстноеМеню</name>
+        <id>98</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -631,19 +631,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВыполненныеРаботыВКМ_ОписаниеРабот</name>
-      <id>47</id>
+      <name>ВыполненныеРаботыОписаниеРабот</name>
+      <id>100</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВыполненныеРаботы.ВКМ_ОписаниеРабот</segments>
+        <segments>Объект.ВыполненныеРаботы.ОписаниеРабот</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ОписаниеРаботРасширеннаяПодсказка</name>
-        <id>49</id>
+        <name>ВыполненныеРаботыОписаниеРаботРасширеннаяПодсказка</name>
+        <id>102</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -657,8 +657,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ОписаниеРаботКонтекстноеМеню</name>
-        <id>48</id>
+        <name>ВыполненныеРаботыОписаниеРаботКонтекстноеМеню</name>
+        <id>101</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -681,19 +681,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВыполненныеРаботыВКМ_ФактическиПотраченоЧасов</name>
-      <id>50</id>
+      <name>ВыполненныеРаботыФактическиПотраченоЧасов</name>
+      <id>103</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВыполненныеРаботы.ВКМ_ФактическиПотраченоЧасов</segments>
+        <segments>Объект.ВыполненныеРаботы.ФактическиПотраченоЧасов</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ФактическиПотраченоЧасовРасширеннаяПодсказка</name>
-        <id>52</id>
+        <name>ВыполненныеРаботыФактическиПотраченоЧасовРасширеннаяПодсказка</name>
+        <id>105</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -707,8 +707,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ФактическиПотраченоЧасовКонтекстноеМеню</name>
-        <id>51</id>
+        <name>ВыполненныеРаботыФактическиПотраченоЧасовКонтекстноеМеню</name>
+        <id>104</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -731,19 +731,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВКМ_ВыполненныеРаботыВКМ_ЧасыКОплатеКлиенту</name>
-      <id>53</id>
+      <name>ВыполненныеРаботыЧасыКОплатеКлиенту</name>
+      <id>106</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ВыполненныеРаботы.ВКМ_ЧасыКОплатеКлиенту</segments>
+        <segments>Объект.ВыполненныеРаботы.ЧасыКОплатеКлиенту</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ЧасыКОплатеКлиентуРасширеннаяПодсказка</name>
-        <id>55</id>
+        <name>ВыполненныеРаботыЧасыКОплатеКлиентуРасширеннаяПодсказка</name>
+        <id>108</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -757,8 +757,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыВКМ_ЧасыКОплатеКлиентуКонтекстноеМеню</name>
-        <id>54</id>
+        <name>ВыполненныеРаботыЧасыКОплатеКлиентуКонтекстноеМеню</name>
+        <id>107</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -781,8 +781,8 @@
       </extInfo>
     </items>
     <autoCommandBar>
-      <name>ВКМ_ВыполненныеРаботыКоманднаяПанель</name>
-      <id>33</id>
+      <name>ВыполненныеРаботыКоманднаяПанель</name>
+      <id>86</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -797,11 +797,11 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ВКМ_ВыполненныеРаботыСтрокаПоиска</name>
-      <id>35</id>
+      <name>ВыполненныеРаботыСтрокаПоиска</name>
+      <id>88</id>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыСтрокаПоискаРасширеннаяПодсказка</name>
-        <id>37</id>
+        <name>ВыполненныеРаботыСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>90</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -815,8 +815,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыСтрокаПоискаКонтекстноеМеню</name>
-        <id>36</id>
+        <name>ВыполненныеРаботыСтрокаПоискаКонтекстноеМеню</name>
+        <id>89</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -824,7 +824,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>ВКМ_ВыполненныеРаботыСтрокаПоиска</source>
+      <source>ВыполненныеРаботыСтрокаПоиска</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -835,11 +835,11 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ВКМ_ВыполненныеРаботыСостояниеПросмотра</name>
-      <id>38</id>
+      <name>ВыполненныеРаботыСостояниеПросмотра</name>
+      <id>91</id>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыСостояниеПросмотраРасширеннаяПодсказка</name>
-        <id>40</id>
+        <name>ВыполненныеРаботыСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>93</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -853,8 +853,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыСостояниеПросмотраКонтекстноеМеню</name>
-        <id>39</id>
+        <name>ВыполненныеРаботыСостояниеПросмотраКонтекстноеМеню</name>
+        <id>92</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -863,7 +863,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>ВКМ_ВыполненныеРаботыСостояниеПросмотра</source>
+      <source>ВыполненныеРаботыСостояниеПросмотра</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -874,11 +874,11 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <name>ВКМ_ВыполненныеРаботыУправлениеПоиском</name>
-      <id>41</id>
+      <name>ВыполненныеРаботыУправлениеПоиском</name>
+      <id>94</id>
       <extendedTooltip>
-        <name>ВКМ_ВыполненныеРаботыУправлениеПоискомРасширеннаяПодсказка</name>
-        <id>43</id>
+        <name>ВыполненныеРаботыУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>96</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -892,8 +892,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВКМ_ВыполненныеРаботыУправлениеПоискомКонтекстноеМеню</name>
-        <id>42</id>
+        <name>ВыполненныеРаботыУправлениеПоискомКонтекстноеМеню</name>
+        <id>95</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -902,14 +902,14 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>ВКМ_ВыполненныеРаботыУправлениеПоиском</source>
+      <source>ВыполненныеРаботыУправлениеПоиском</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>ВКМ_ВыполненныеРаботыРасширеннаяПодсказка</name>
-      <id>34</id>
+      <name>ВыполненныеРаботыРасширеннаяПодсказка</name>
+      <id>87</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -923,8 +923,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ВКМ_ВыполненныеРаботыКонтекстноеМеню</name>
-      <id>32</id>
+      <name>ВыполненныеРаботыКонтекстноеМеню</name>
+      <id>85</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -932,6 +932,7 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
+    <representation>HierarchicalList</representation>
     <changeRowSet>true</changeRowSet>
     <changeRowOrder>true</changeRowOrder>
     <autoMaxWidth>true</autoMaxWidth>

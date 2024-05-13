@@ -34,4 +34,5 @@
   <content>Report.ВКМ_РасчетыССотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>InformationRegister.ВКМ_ГрафикОтпусков</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
 </mdclass:Subsystem>
