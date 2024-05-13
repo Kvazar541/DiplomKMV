@@ -3,7 +3,7 @@
   <name>ВКМ_ОбслуживаниеКлиентов</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ обслуживание клиентов</value>
+    <value>Обслуживание клиентов</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
