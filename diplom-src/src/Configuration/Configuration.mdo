@@ -575,6 +575,14 @@
   <roles>Role.ЧтениеНСИ</roles>
   <roles>Role.ЧтениеУчетныхЗаписейЭлектроннойПочты</roles>
   <roles>Role.ВКМ_ДобавлениеИзменениеДокументаОбслуживаниеКлиента</roles>
+  <roles>Role.ВКМ_ДобавлениеИзменениеДокументаНачислениеЗарплаты</roles>
+  <roles>Role.ВКМ_ДобавлениеИзменениеДокументаНачислениеФиксированнойПремии</roles>
+  <roles>Role.ВКМ_ДобавлениеИзменениеДокументаВыплатаЗарплаты</roles>
+  <roles>Role.ВКМ_ДобавлениеИзменениеДокументаГрафикОтпусков</roles>
+  <roles>Role.ВКМ_Специалист</roles>
+  <roles>Role.ВКМ_Менеджер</roles>
+  <roles>Role.ВКМ_БухгалтерИТФирмы</roles>
+  <roles>Role.ВКМ_КадровикРассчетчик</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияПоСозданиюФаксимильнойПодписиИПечати</commonTemplates>

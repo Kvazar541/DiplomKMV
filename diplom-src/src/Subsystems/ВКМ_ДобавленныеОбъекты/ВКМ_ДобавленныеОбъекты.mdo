@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="824c577e-5fd2-40da-982e-10d4183f7c0d">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="824c577e-5fd2-40da-982e-10d4183f7c0d">
   <name>ВКМ_ДобавленныеОбъекты</name>
   <synonym>
     <key>ru</key>
@@ -7,32 +7,14 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
-  <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
-  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
-  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
-  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
-  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
-  <content>Catalog.ВКМ_УведомленияТелеграмБотуДляОтправки</content>
-  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
-  <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
-  <content>CalculationRegister.ВКМ_Удержания</content>
-  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
-  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
-  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
-  <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
-  <content>Catalog.ВКМ_ГрафикиРаботы</content>
-  <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
-  <content>Document.ВКМ_НачислениеЗарплаты</content>
-  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
-  <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
-  <content>Document.ВКМ_ВыплатаЗарплаты</content>
-  <content>Document.ВКМ_ГрафикОтпусков</content>
-  <content>Report.ВКМ_ВыработкаСпециалистов</content>
-  <content>3e2f4484-ad30-4841-94c4-6ab64e360be6</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов</content>
-  <content>Report.ВКМ_РасчетыССотрудниками</content>
-  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
-  <content>InformationRegister.ВКМ_ГрафикОтпусков</content>
-  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.CreateListItem</picture>
+  </picture>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+  <subsystems>Отчеты</subsystems>
+  <subsystems>РегистрыСведений</subsystems>
+  <subsystems>РегистрыНакопления</subsystems>
+  <subsystems>РегистрыРасчета</subsystems>
+  <subsystems>Сервис</subsystems>
 </mdclass:Subsystem>
