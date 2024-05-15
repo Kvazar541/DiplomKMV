@@ -209,10 +209,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="88f7a2ba-531c-4a95-b0e1-08ac90ac984e">
-    <name>ВКМ_СтомостьЧасаРаботы</name>
+    <name>ВКМ_СтоимостьЧасаРаботы</name>
     <synonym>
       <key>ru</key>
-      <value>Стомость часа работы</value>
+      <value>Стоимость часа работы</value>
     </synonym>
     <type>
       <types>Number</types>

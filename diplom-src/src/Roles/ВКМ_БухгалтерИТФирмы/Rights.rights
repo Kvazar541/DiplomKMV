@@ -945,7 +945,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ДоговорыКонтрагентов.Attribute.ВКМ_СтомостьЧасаРаботы</name>
+		<name>Catalog.ДоговорыКонтрагентов.Attribute.ВКМ_СтоимостьЧасаРаботы</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
