@@ -68,10 +68,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ВТ_ДнейПоПлану.Сотрудник КАК Сотрудник,
-	ВТ_ДнейПоПлану.ВыходныхДней КАК ВыходныхДней,
-	ВТ_ОтгуленоДней.ОтгуленоДней КАК ОтгуленоДней,
-	ВТ_ДнейПоПлану.ВыходныхДней - ВТ_ОтгуленоДней.ОтгуленоДней КАК ОсталосьВыходных
+	ЕСТЬNULL(ВТ_ДнейПоПлану.Сотрудник, 0) КАК Сотрудник,
+	ЕСТЬNULL(ВТ_ДнейПоПлану.ВыходныхДней, 0) КАК ВыходныхДней,
+	ЕСТЬNULL(ВТ_ОтгуленоДней.ОтгуленоДней, 0) КАК ОтгуленоДней,
+	ЕСТЬNULL(ВТ_ДнейПоПлану.ВыходныхДней - ВТ_ОтгуленоДней.ОтгуленоДней, 0) КАК ОсталосьВыходных
 ИЗ
 	ВТ_ДнейПоПлану КАК ВТ_ДнейПоПлану
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОтгуленоДней КАК ВТ_ОтгуленоДней
@@ -379,16 +379,32 @@
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Период</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardPeriod">
 						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+						<v8:startDate>2024-01-01T00:00:00</v8:startDate>
+						<v8:endDate>2024-12-31T23:59:59</v8:endDate>
 					</dcscor:value>
 					<dcsset:userSettingID>0455d825-2304-4398-87fd-2be78b04f107</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>
