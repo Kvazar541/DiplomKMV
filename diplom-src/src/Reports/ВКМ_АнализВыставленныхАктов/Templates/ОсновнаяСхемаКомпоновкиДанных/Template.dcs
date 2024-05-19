@@ -55,7 +55,7 @@
 ГДЕ
 	ДоговорыКонтрагентов.ВидДоговора = &amp;ВидДоговора
 	И ОбработкаЗаказов.СуммаОтгрузки &gt; 0
-	И ОбработкаЗаказов.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И ОбработкаЗаказов.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -65,7 +65,7 @@
 	СУММА(ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеПриход) КАК СуммаФактВыполненныхРаботКлиенту
 ПОМЕСТИТЬ ВТ_СуммаФактРабот
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;ДатаНачала, &amp;ДатаОкончания, , ) КАК ВКМ_ВыполненныеКлиентуРаботыОбороты
+	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК ВКМ_ВыполненныеКлиентуРаботыОбороты
 
 СГРУППИРОВАТЬ ПО
 	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент,
@@ -106,11 +106,11 @@
 		<useRestriction>true</useRestriction>
 	</parameter>
 	<parameter>
-		<name>ДатаНачала</name>
+		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Дата начала</v8:content>
+				<v8:content>Начало периода</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -124,11 +124,11 @@
 		<expression>&amp;Период.ДатаНачала</expression>
 	</parameter>
 	<parameter>
-		<name>ДатаОкончания</name>
+		<name>КонецПериода</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Дата окончания</v8:content>
+				<v8:content>Конец периода</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -157,40 +157,6 @@
 			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
-		<useRestriction>false</useRestriction>
-	</parameter>
-	<parameter>
-		<name>НачалоПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
-	</parameter>
-	<parameter>
-		<name>КонецПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Конец периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<template>
@@ -263,11 +229,11 @@
 		</template>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ДатаНачала</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.ДатаНачала</dcsat:expression>
+			<dcsat:expression>ПараметрыДанных.НачалоПериода</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ДатаОкончания</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.ДатаОкончания</dcsat:expression>
+			<dcsat:expression>ПараметрыДанных.КонецПериода</dcsat:expression>
 		</parameter>
 	</template>
 	<template>
