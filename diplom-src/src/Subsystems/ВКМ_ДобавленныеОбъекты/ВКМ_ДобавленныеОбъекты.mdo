@@ -10,7 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>StdPicture.CreateListItem</picture>
   </picture>
-  <content>Catalog.ДоговорыКонтрагентов</content>
   <subsystems>Справочники</subsystems>
   <subsystems>Документы</subsystems>
   <subsystems>Отчеты</subsystems>
