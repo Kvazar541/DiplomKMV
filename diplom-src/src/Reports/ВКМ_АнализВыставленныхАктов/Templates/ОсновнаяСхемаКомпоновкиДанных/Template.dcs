@@ -9,20 +9,16 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Клиент</dataPath>
 			<field>Клиент</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Договор</dataPath>
 			<field>Договор</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаФактВыполненныхРаботКлиенту</dataPath>
-			<field>СуммаФактВыполненныхРаботКлиенту</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма факт выполненных работ клиенту</v8:content>
-				</v8:item>
-			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаБезАбонентскойПлаты</dataPath>
@@ -31,6 +27,16 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Сумма без абонентской платы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФактВыполненныхРаботКлиенту</dataPath>
+			<field>СуммаФактВыполненныхРаботКлиенту</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма факт выполненных работ клиенту</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -54,18 +60,16 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ВКМ_ВыполненныеКлиентуРаботы.Клиент КАК Клиент,
-	ВКМ_ВыполненныеКлиентуРаботы.Договор КАК Договор,
-	СУММА(ВКМ_ВыполненныеКлиентуРаботы.СуммаКОплате) КАК СуммаФактВыполненныхРаботКлиенту
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент КАК Клиент,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор КАК Договор,
+	СУММА(ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеПриход) КАК СуммаФактВыполненныхРаботКлиенту
 ПОМЕСТИТЬ ВТ_СуммаФактРабот
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы КАК ВКМ_ВыполненныеКлиентуРаботы
-ГДЕ
-	ВКМ_ВыполненныеКлиентуРаботы.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;ДатаНачала, &amp;ДатаОкончания, , ) КАК ВКМ_ВыполненныеКлиентуРаботыОбороты
 
 СГРУППИРОВАТЬ ПО
-	ВКМ_ВыполненныеКлиентуРаботы.Договор,
-	ВКМ_ВыполненныеКлиентуРаботы.Клиент
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -153,6 +157,40 @@
 			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<template>
