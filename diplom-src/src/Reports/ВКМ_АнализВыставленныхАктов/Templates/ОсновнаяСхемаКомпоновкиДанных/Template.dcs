@@ -21,16 +21,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаБезАбонентскойПлаты</dataPath>
-			<field>СуммаБезАбонентскойПлаты</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма без абонентской платы</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаФактВыполненныхРаботКлиенту</dataPath>
 			<field>СуммаФактВыполненныхРаботКлиенту</field>
 			<title xsi:type="v8:LocalStringType">
@@ -40,22 +30,33 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаБезАбонентскойПлаты</dataPath>
+			<field>СуммаБезАбонентскойПлаты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма без абонентской платы</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ОбработкаЗаказов.Контрагент КАК Контрагент,
 	ОбработкаЗаказов.Договор КАК Договор,
-	ОбработкаЗаказов.СуммаОтгрузки КАК СуммаОтгрузки,
-	ДоговорыКонтрагентов.ВКМ_АбонентскаяПлата КАК ВКМ_АбонентскаяПлата,
-	ОбработкаЗаказов.СуммаОтгрузки - ДоговорыКонтрагентов.ВКМ_АбонентскаяПлата КАК СуммаБезАбонентскойПлаты
+	СУММА(ОбработкаЗаказов.СуммаОтгрузки) КАК СуммаОтгрузки,
+	СУММА(ОбработкаЗаказов.Договор.ВКМ_АбонентскаяПлата) КАК АбонентскаяПлата,
+	СУММА(ОбработкаЗаказов.СуммаОтгрузки - ОбработкаЗаказов.Договор.ВКМ_АбонентскаяПлата) КАК СуммаБезАбонентскойПлаты
 ПОМЕСТИТЬ ВТ_СуммаВыставленнаяКлиентуБезАбонентки
 ИЗ
 	РегистрНакопления.ОбработкаЗаказов КАК ОбработкаЗаказов
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
-		ПО ОбработкаЗаказов.Договор = ДоговорыКонтрагентов.Ссылка
 ГДЕ
-	ДоговорыКонтрагентов.ВидДоговора = &amp;ВидДоговора
-	И ОбработкаЗаказов.СуммаОтгрузки &gt; 0
-	И ОбработкаЗаказов.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	ОбработкаЗаказов.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ОбработкаЗаказов.Договор.ВидДоговора = &amp;ВидДоговора
+
+СГРУППИРОВАТЬ ПО
+	ОбработкаЗаказов.Контрагент,
+	ОбработкаЗаказов.Договор
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +81,7 @@
 	ВТ_СуммаВыставленнаяКлиентуБезАбонентки.СуммаБезАбонентскойПлаты КАК СуммаБезАбонентскойПлаты
 ИЗ
 	ВТ_СуммаФактРабот КАК ВТ_СуммаФактРабот
-		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СуммаВыставленнаяКлиентуБезАбонентки КАК ВТ_СуммаВыставленнаяКлиентуБезАбонентки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_СуммаВыставленнаяКлиентуБезАбонентки КАК ВТ_СуммаВыставленнаяКлиентуБезАбонентки
 		ПО ВТ_СуммаФактРабот.Договор = ВТ_СуммаВыставленнаяКлиентуБезАбонентки.Договор</query>
 	</dataSet>
 	<totalField>
@@ -91,20 +92,6 @@
 		<dataPath>СуммаФактВыполненныхРаботКлиенту</dataPath>
 		<expression>Сумма(СуммаФактВыполненныхРаботКлиенту)</expression>
 	</totalField>
-	<parameter>
-		<name>ВидДоговора</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Вид договора</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидыДоговоровКонтрагентов</v8:Type>
-		</valueType>
-		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыДоговоровКонтрагентов.ВКМ_АбонентскоеОбслуживание</value>
-		<useRestriction>true</useRestriction>
-	</parameter>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -158,6 +145,20 @@
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
 		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидДоговора</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид договора</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидыДоговоровКонтрагентов</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыДоговоровКонтрагентов.ВКМ_АбонентскоеОбслуживание</value>
+		<useRestriction>true</useRestriction>
 	</parameter>
 	<template>
 		<name>Макет1</name>
@@ -353,11 +354,6 @@
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ВидДоговора</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Период</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardPeriod">
 						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
@@ -365,6 +361,11 @@
 						<v8:endDate>2024-12-31T23:59:59</v8:endDate>
 					</dcscor:value>
 					<dcsset:userSettingID>21508802-f302-4f63-bc4d-aa68d0532201</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидДоговора</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
