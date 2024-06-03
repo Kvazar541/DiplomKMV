@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="063da381-0770-4cc9-8c33-5fa0d5f0b151">
+  <producedTypes>
+    <selectionType typeId="03421558-17b1-40f5-989e-755f7059cf29" valueTypeId="9df28da8-d9e0-48bf-a72b-6c9f89298aa8"/>
+    <listType typeId="c9936e47-be74-4193-a5f9-72c0637cb5eb" valueTypeId="02d8e095-1e68-4689-94d6-ffb2f68948b0"/>
+    <managerType typeId="11476549-c7c7-4a25-b1a0-aceda2c952ed" valueTypeId="fd8c1e91-3a49-4ec2-a419-f755f8ee8405"/>
+    <recordSetType typeId="38e8c7cd-8597-43b7-a13d-9ece844bc8f3" valueTypeId="9c98ac8f-1b51-4da3-9983-2dbabc4ca468"/>
+    <recordKeyType typeId="ea812081-5f78-42be-89ab-dbee6b493027" valueTypeId="d16838a2-3d6c-47a9-b227-394a54ee303e"/>
+    <recordType typeId="c32ce0e4-5727-4d3c-a1b9-1250f0b5e2e5" valueTypeId="059dbf82-e813-4e1c-8a8d-6c9229c6fbe1"/>
+  </producedTypes>
+  <name>ВКМ_ВыставленнаяКлиентуАбонентскаяПлата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выставленная клиенту абонентская плата</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b6476869-c5da-45c7-b98b-b4921d2f8a08">
+    <name>СуммаКОплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма к оплате</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="cf62af93-b80a-4264-ac5d-64a6f9371f24">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3206fac4-1e00-4500-8c85-755f35eb5db6">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
