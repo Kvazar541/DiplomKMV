@@ -47,7 +47,7 @@
 ### Файлы
 
 Файлы Базы с тестовыми данными и файл конфигурации можно скачать по ссылке:
-https://disk.yandex.ru/d/28Xroo_OQwjOQA
+https://disk.yandex.ru/d/NY1TnJ9GBxCw1w
 
 ------
 
